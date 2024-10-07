@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Deadine3</title>
+    </head>
+    <body>
+        <style>
+            /* Câu 4 */
+            .container4{
+                padding-top:80px;
+                padding-bottom:80px;
+                background-color:rgb(210, 198, 198);
+                display:flex;
+                justify-content:space-evenly;
+                align-items:center;
+                margin-left:140px;
+                margin-right:140px;
+                border-radius:15px;
+                position:relative;
+                
+            }
+            .container4::before{
+                width:50%;
+                height:100%;
+                position:absolute;
+                top: 0;
+                right: 0;
+                content: "";
+                background-image: url(images/dots.svg);
+            }
+            .content_container4{
+                background-color:rgb(210, 198, 198);
+            }
+
+            #div__content_container4{
+                background-color: #E8DFFC;
+                color: #B966E7;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 10px 20px;
+                border-radius: 45px;
+                text-transform: uppercase;
+                margin-top:0;
+                margin-bottom: 15px;
+                display: inline-block;
+                cursor:pointer;
+                font-family: "Be Vietnam Pro", sans-serif;
+            }
+            #h1_content_container4{
+                margin-top:10px;
+                margin-bottom:10px;
+                font-size: 38px;
+                font-weight: bold;
+                font-family: "Be Vietnam Pro", sans-serif;
+            }
+            #p2__content_container4{
+                margin-top:0;
+                margin-bottom:0;
+                color: #6b7385;
+                font-size: 16px;
+                font-family: "Be Vietnam Pro", sans-serif;
+            }
+            /* thẻ form */
+            .form{
+                display:flex;
+                align-items:center;
+                width: 45%;
+                background: #ffffff;
+                border: 1px solid #eeeeee;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                position: relative;
+            }
+            .form input{
+                flex: 1;
+                background: #ffffff;
+                padding: 0 10px;
+                outline: none;
+                border: 0;
+                font-size: 14px;
+                color: #6b7385;
+                height: 50px;
+            }
+            .form button{
+                background-color: #B966E7;
+                color: #ffffff;
+                border: 0;
+                height: 50px;
+                padding: 0 20px;
+                border-radius: 6px;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        </style>
+
+        <h1>Câu 4: Newsletter (Form đăng ký nhận tin)</h1>
+        <p><strong>Yêu cầu:</strong> Sử dụng HTML và CSS để dựng khối bên dưới</p>
+        <div class="container4">
+            <div class="content_container4">
+                <div id="div__content_container4" class="item__content_container4">Get Latest Histudy Update</div>
+                <h1 id="h1_content_container4" class="item__content_container4">Subscribe Our Newsletter</h1>
+                <p id="p2__content_container4" class="item__content_container4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <form class="form" action="https://www.w3schools.com/action_page.php" target="_blank">
+                <input type="email" placeholder="Enter Your E-Email">
+                <button type="submit">
+                Subscribe <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
